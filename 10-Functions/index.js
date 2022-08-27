@@ -1,10 +1,6 @@
 const bookings = [];
 
-const createBooks = function (flightNum, numPassengers, price) {
-
-    // ES5
-    numPassengers = numPassengers || 1
-    price = price || 199
+const createBooks = function (flightNum, numPassengers = 1, price = 199) {
 
     const booking = {
         flightNum,
@@ -12,7 +8,6 @@ const createBooks = function (flightNum, numPassengers, price) {
         price
     };
 
-    console.log(booking)
     bookings.push(booking);
 };
 
