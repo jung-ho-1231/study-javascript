@@ -13,5 +13,3 @@ const createBooks = function (flightNum, numPassengers = 1, price = 199) {
 
 
 createBooks('LH123')
-
-console.log(bookings)
