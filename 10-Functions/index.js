@@ -12,18 +12,18 @@ const createBooks = function (flightNum, numPassengers = 1, price = 199) {
 };
 
 
-createBooks('LH123')
-createBooks('LH123', undefined, 1000)
+// createBooks('LH123')
+// createBooks('LH123', undefined, 1000)
 
 // ============================================================
 
 const flight = 'LH234';
 const jonas = {
-    name : 'jung ho',
-    passport : 212321312414
+    name: 'jung ho',
+    passport: 212321312414
 }
 
-const newPassport = function (person){
+const newPassport = function (person) {
     person.passport = Math.trunc(Math.random() * 10000);
 }
 
@@ -48,5 +48,8 @@ const transformer = function (str, fn) {
     console.log(`Transformed by : ${fn.name}`)
 }
 
-transformer('Javascript is the best!', upperFirstWord)
-transformer('Javascript is the best!', oneWord)
+// transformer('Javascript is the best!', upperFirstWord)
+// transformer('Javascript is the best!', oneWord)
+
+// ===================================================
+
