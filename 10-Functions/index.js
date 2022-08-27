@@ -53,3 +53,20 @@ const transformer = function (str, fn) {
 
 // ===================================================
 
+const greet = function (greeting) {
+    return function (name) {
+        console.log(`${greeting} ${name}`)
+    };
+};
+
+const greeterHey = greet('Hey');
+
+greeterHey('jung')
+greeterHey('ho')
+
+greet('Hello')('jung')
+
+// Challenge : change to array function
+
+const greetArrayFunction = greeting => name => console.log(`${greeting} ${name}`)
+greetArrayFunction('Hi')('jung')
